@@ -1,0 +1,78 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Nav Menu - Water</title>
+  <link rel="stylesheet" href="styles4.css" />
+  
+    /* Full page background */
+   
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <ul class="nav-items">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <section id="home">
+      <div class="home-header">
+        <img src="https://cdn-icons-png.flaticon.com/512/728/728093.png" alt="Water Logo" class="logo-img"/>
+        <h1 class="title-text">Water</h1>
+      </div>
+      <h2>Home</h2>
+      <p>
+        <strong>Clean Water for a Better Tomorrow</strong><br />
+        Ensuring access to safe and sustainable water for everyone. Learn how we’re protecting and preserving one of Earth’s most vital resources.
+      </p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJBDV18zZoP4B8CEX4k7cLu8tdzozRC0T4zQ&s" alt="Water Image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEtcWc2pIFI-saCpBEihhB8BkHm989gn893w&s" alt="Another Water Image">
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        We are a dedicated team passionate about water sustainability. Our mission is to raise awareness, provide clean water solutions, and educate communities on the importance of preserving water for future generations.
+      </p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li><strong>💧 Water Filtration Solutions:</strong> Affordable, eco-friendly filtration systems.</li>
+        <li><strong>📢 Awareness Campaigns:</strong> Interactive workshops and online resources.</li>
+        <li><strong>🌍 Community Projects:</strong> Building wells and rainwater harvesting systems in water-scarce areas.</li>
+        <li><strong>🧪 Consultation:</strong> Water audits for homes, schools, and communities.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+      <p class="contact-info">
+        Have questions, want to partner with us, or looking to help?<br />
+        <strong>Email:</strong> Hikmafaruk84@gmail.com<br />
+        <strong>Phone:</strong> +251983667709<br />
+        <strong>Address:</strong> Jimma,Ethiopia<br />
+        Or fill out our <a href="#" style="color: #00ffff;">contact form</a> to get in touch.
+      </p>
+    </section>
+  </main>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
